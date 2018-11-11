@@ -3,8 +3,8 @@
   <head>
     <title>calculator</title>
     <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="simiple calculator web app">
+    <meta name="keywords" content="calculator">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts.js"></script>
@@ -13,11 +13,19 @@
     <div class="main">
       <div class="header">
         <h1>calculator</h1>
-        <h4>add two values</h4>
+        <h4>add, subtract, multiply, or divide two values</h4>
       </div>
       <form id="calculator">
         <label for="first"></label>
         <input type="text" id="first" placeholder="first value">
+
+        <select id="operator" name="operator">
+          <option value="add">+</option>
+          <option value="subtract">-</option>
+          <option value="multiply">*</option>
+          <option value="divide">/</option>
+        </select>
+
         <label for="second"></label>
         <input type="text" id="second" placeholder="second value">
         <button type="submit" id="button">submit</button>
